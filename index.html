@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>اختبار سرعة الكتابة</title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+
+    <div id="settings" class="settings">
+      <form id="settings-form">
+        <div>
+          <label for="difficulty">الصعوبة</label>
+          <select id="difficulty">
+            <option value="easy">سهل</option>
+            <option value="medium">متوسط</option>
+            <option value="hard">صعب</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>👩‍💻  اختبار سرعة الكتابة  👨‍💻</h2>
+      <p>اكتب الكلمة الأتية:</p>
+
+      <h1 id="word"></h1>
+
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here..."
+        autofocus
+      />
+
+      <p class="time-container">الوقت: <span id="time">10</span></p>
+
+      <p class="score-container">النتيجة: <span id="score">0</span></p>
+
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
